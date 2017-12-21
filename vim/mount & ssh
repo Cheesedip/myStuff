@@ -1,0 +1,8 @@
+//maradona
+sudo mount 192.168.88.34:/STORAGE_TANK/share /nfsmount
+
+//ronaldo
+ssh -X -i /home/maikel/Downloads/maikel maikel@192.168.88.228
+
+//roben
+ssh -X m.schils@192.168.88.39
