@@ -7,5 +7,9 @@ ssh -X -i /home/maikel/Downloads/maikel maikel@192.168.88.228
 //roben
 ssh -X m.schils@192.168.88.39
 
+//local
+sudo fdisk -l
+sudo mount /dev/sda2 /mnt
+
 //Sample for creating a video from images
 ffmpeg -r 25 -f image2 -s 2328x1752 -start_number 0 -i %d.jpg -vframes 60000 -vcodec libx264 -crf 25  -pix_fmt yuv420p final.mp4
