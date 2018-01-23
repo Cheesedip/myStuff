@@ -12,7 +12,6 @@ ssh -X -i /home/maikel/Downloads/maikel maikel@192.168.88.228
 ssh -X m.schils@192.168.88.39
 
 //transfer a file using SCP
-
 basic syntax:
 scp username@remote_1:/file/to/send username@remote_2:/where/to/pu
 
