@@ -30,3 +30,9 @@ $  docker stop <manager container name>
 -Open the /etc/hosts file, and add the broker hostname to the localhost IP
 
 -Use your Kafka library to interface with localhost:9092
+
+//rdKafka
+https://github.com/edenhill/librdkafka
+
+//cppWrapper
+https://github.com/mfontanini/cppkafka/wiki
