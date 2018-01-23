@@ -7,6 +7,15 @@ ssh -X -i /home/maikel/Downloads/maikel maikel@192.168.88.228
 //roben
 ssh -X m.schils@192.168.88.39
 
+//transfer a file using SCP
+
+basic syntax:
+scp username@remote_1:/file/to/send username@remote_2:/where/to/pu
+
+example:
+scp -P 3333 m.schils@217.119.234.214:/home/m.schils/Data/BallDetector/Test1/test.txt /home/maikel/Downloads
+
+
 //local
 sudo fdisk -l
 sudo mount /dev/sda2 /mnt
