@@ -11,8 +11,9 @@ sudo mount /dev/sda2 /mnt
 //ronaldo
 ssh -X -i /home/maikel/Downloads/maikel maikel@192.168.88.228
 
-//roben
-ssh -X m.schils@192.168.88.39
+//robben
+Enschede: ssh -X m.schils@192.168.88.39
+VPN: ssh -X -p 3333 m.schils@217.119.234.214
 
 //transfer a file using SCP
 basic syntax:
