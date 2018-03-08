@@ -1,0 +1,1 @@
+docker run --privileged -v ~/bj-2.0-production:/src -v /nfsmount:/nfsmount -it balljames-production-cgdb
