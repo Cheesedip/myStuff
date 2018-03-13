@@ -9,7 +9,8 @@ sudo fdisk -l
 sudo mount /dev/sda2 /mnt
 
 //ronaldo
-ssh -X -i /home/maikel/Downloads/maikel maikel@192.168.88.228
+Enschede: ssh -X -i /home/maikel/Downloads/maikel maikel@192.168.88.228
+VPN: ssh -i ~/Downloads/maikel -p 4444 maikel@217.119.234.214
 
 //robben
 Enschede: ssh -X m.schils@192.168.88.39
