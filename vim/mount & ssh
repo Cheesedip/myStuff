@@ -25,3 +25,7 @@ scp -P 3333 m.schils@217.119.234.214:/home/m.schils/Data/BallDetector/Test1/test
 
 //Sample for creating a video from images
 ffmpeg -r 25 -f image2 -s 2328x1752 -start_number 0 -i %d.jpg -vframes 60000 -vcodec libx264 -crf 25  -pix_fmt yuv420p final.mp4
+
+//Setup SSH
+sudo apt-get install openssh-server
+sudo service ssh status
