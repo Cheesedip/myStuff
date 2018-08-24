@@ -3,7 +3,7 @@ sudo mount 192.168.88.34:/STORAGE_TANK/share /nfsmount
 
 //mount over ssh
 sudo sshfs -o allow_other,port=3333,idmap=user,nonempty,IdentityFile=home/maikel/.ssh/maikel m.schils@217.119.234.214:/nfsmount /nfsmount
-
+sudo sshfs -o allow_other,idmap=user,nonempty,identityFile=home/maikel/Downloads/maikel maikel@10.81.15.184:/nfsmount /nfsmount
 //local mount
 sudo fdisk -l
 sudo mount /dev/sda2 /mnt
