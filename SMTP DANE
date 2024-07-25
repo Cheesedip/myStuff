@@ -1,0 +1,11 @@
+I attempt to send an email to alex@riskchallenger.nl. My local PC sends a DNS query to the DNS server to find out the IP address of the mail server for riskchallenger.nl.
+
+DNSSEC: The DNS server has an entry for the riskchallenger.nl domain, which includes DNSSEC signatures. These signatures ensure that the information hasn't been tampered with. The DNSSEC signature is created using a private key controlled by the domain's DNS server.
+
+Validation: When my local PC receives the DNS response, it uses the corresponding public key (available through DNS) to verify the DNSSEC signature. If the signature is valid, it confirms that the DNS response is authentic and hasn't been altered.
+
+TLSA Record: In addition to the IP address, the DNS response might include a TLSA record. This record specifies the expected TLS certificate for the mail server of riskchallenger.nl. The TLSA record is also protected by DNSSEC, ensuring its integrity and authenticity.
+
+TLS Certificate Verification: When my email client connects to the mail server at the provided IP address, it retrieves the server's TLS certificate. It then compares this certificate against the information in the TLSA record.
+
+Sending the Email: If the TLS certificate presented by the mail server matches the expected certificate specified in the TLSA record, the connection is considered secure, and the email is sent. If the certificates don't match, the email is not sent, protecting against potential man-in-the-middle attacks.
