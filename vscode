@@ -1,0 +1,19 @@
+ctrl shift P -> user settings.json
+
+add the following
+
+    "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-p>": false,
+    "<C-f>": false,
+    // VS Code new marker @ next occurrence
+    "<C-d>": false,
+    // Copy
+    "<C-c>": false,
+    // Cut
+    "<C-x>": false,
+    // Paste
+    "<C-v>": false,
+    "<C-z>": false,
+    "<C-y>": false,
+},
