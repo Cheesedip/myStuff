@@ -17,3 +17,37 @@ add the following
     "<C-z>": false,
     "<C-y>": false,
 },
+
+
+ctrl shift P => Open Keyboard Shortcuts (JSON)
+
+[
+    // Navigate Splits
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    }
+
+
+    // Navigate buffers
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.nextEditor"
+    }
+]
